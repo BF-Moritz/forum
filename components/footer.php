@@ -10,9 +10,7 @@ $newestUser = getNewestUser();
 <div class="footer">
     <div class="footer-container">
         <div class="footer-links">
-            <a href="test">test</a>
-            <a href="test">test</a>
-            <a href="test">test</a>
+            <a href="https://github.com/BF-Moritz/forum">Github</a>
         </div>
         <div class="footer-stats">
             Anzhl Mitglieder: <?php echo $userCount; ?><br>

@@ -1,0 +1,11 @@
+.friend {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(32, 45, 57, 0.305);
+    color: var(--text-primary);
+    border: 1px solid rgba(188, 188, 188, 0.354);
+}
+
+.friend-accepted {
+    background-color: rgba(24, 66, 31, 0.305);
+}

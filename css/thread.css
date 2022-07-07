@@ -1,0 +1,55 @@
+.thread {
+    padding: 5px;
+}
+
+.thread-title {
+    color: var(--text-primary);
+    font-size: 28px;
+}
+
+.thread-desc {
+    color: var(--text-secondary);
+}
+
+.post {
+    padding: 5px;
+    margin: 2px 5px;
+    background-color: rgba(32, 45, 57, 0.305);
+    border: 1px solid rgba(188, 188, 188, 0.354);
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.post:hover {
+    background-color: rgba(32, 45, 57, 0.718);
+}
+
+.post-title {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-info-text {
+    color: var(--text-primary);
+    margin: 5px 0;
+}
+
+.post-info-comments {
+    text-align: right;
+}
+
+.add-post-container {
+    padding: 0 5px;
+}
+
+.add-post {
+    color: var(--text-primary);
+    text-decoration: none;
+}

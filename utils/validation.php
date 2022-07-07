@@ -2,7 +2,7 @@
 
 include_once "daos/users.php";
 
-function validateUsername(string $username) {
+function validateUsername(string $username, bool $new) {
 
     if (strlen($username) < 4) {
         return "Benutzername muss mindestens 4 Zeichen lang sein";
@@ -16,9 +16,11 @@ function validateUsername(string $username) {
         return "Benutzername darf nur aus Buchstaben, Zahlen, '-' und '_' bestehen.";
     }
 
-    $isUsed = isUsernameUsed($username);
-    if ($isUsed) {
-        return 'Benutzername ist schon vergeben. Wollen Sie sich <a href="login.php">einloggen</a>?';
+    if ($new) {
+        $isUsed = isUsernameUsed($username);
+        if ($isUsed) {
+            return 'Benutzername ist schon vergeben. Wollen Sie sich <a href="login.php">einloggen</a>?';
+        }
     }
 
     return null;
@@ -46,5 +48,12 @@ function validatePassword(string $password) {
         return "Passwort darf höchstens 128 Zeichen lang sein";
     }
 
+    return null;
+}
+
+function validateUsernamePassword(string $username, string $password) {
+    if (!checkPassword($username, $password)) {
+        return "Username und Passwort stimmen nicht";
+    }
     return null;
 }

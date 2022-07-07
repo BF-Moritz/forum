@@ -1,9 +1,12 @@
 .footer {
-	margin-top: auto;
-	padding: 5px;
-	background-color: aqua;
+	padding: 10px 24px;
+	background-color: var(--background-container);
 	display: flex;
 	justify-content: center;
+	width: 100%;
+	text-decoration: none;
+	color: var(--text-primary);
+	margin-top: 10px;
 }
 
 .footer-container {
@@ -19,9 +22,11 @@
 	flex-direction: column;
 }
 
-.footer-stats {
-	text-align: start;
+.footer-links a {
+	text-decoration: none;
+	color: var(--text-primary);
 }
 
-.footer-links {
+.footer-stats {
+	text-align: start;
 }
